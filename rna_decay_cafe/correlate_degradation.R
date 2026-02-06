@@ -72,7 +72,7 @@ for (kinetic_rate in c('elongation_speed', 'splicing_speed')) {
       theme_minimal() +
       labs(
         x = "Sd. of log(k_deg)",
-        y = paste("|log2FC| kinetic rate", kinetic_rate),
+        y = paste("|log2FC|", kinetic_rate),
         title = paste0("LFC ", kinetic_rate, "(", treatment_group, " vs. proliferating) vs. sd. of (log(k_deg))")
       ) +
       annotate(
